@@ -1,4 +1,4 @@
-# Mini jogos desenvolvidos com JS para a plataforma DIO
+# Mini jogos desenvolvidos com JS patrocinados pelo IFOOD TECH
 
 * orientação a prototipo
 * manipulação de listas
