@@ -1,0 +1,67 @@
+:root {
+  --cor1: rgb(33, 33, 32);
+  --cor2: rgb(38, 38, 39);
+  --cor3: #B22936;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cor1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoImg {
+  width: 450px;
+  height: 450px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.sectionMain {
+  background-color: var(--cor2);
+  border-radius: 4px 4px;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.196);
+}
+
+.sectionMain div {
+  background-color: var(--cor3);
+  border-radius: 4px 4px;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  box-shadow: 4px 4px 6px #a8792227;
+}
+
+.sectionMain div a {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  padding-top: 15px;
+}
