@@ -1,4 +1,4 @@
-import {cards} from './objects'
+import {cards} from './objects.js'
 
 const emojis = cards.emojis
 let openCards = cards.openCards;
