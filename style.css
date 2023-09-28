@@ -138,13 +138,13 @@ main {
 /*jogo da memoria*/
 
 .sectionMemoria {
-  width: 500px;
-  height: 400px;
+  width: 620px;
+  height: 450px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  background: linear-gradient(144deg, rgba(255,90,87,1) 4%, rgba(237,200,12,1) 35%, rgba(255,90,87,1) 100%);
+  background: linear-gradient(144deg, rgba(175,34,31,1) 2%, rgba(237,200,12,1) 31%, rgba(175,34,31,1) 79%, rgba(237,200,12,1) 100%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.196);
   padding: 20px;
   transform-style: preserve-3d;
@@ -166,8 +166,8 @@ main {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.196);
   perspective: 500px;
   border: 1px solid black;
@@ -319,3 +319,6 @@ section .column span {
 .piano-keys .key.hide span {
   display: none;
 }
+
+/*pedra papel e tesoura*/
+

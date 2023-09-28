@@ -3,6 +3,7 @@ import {cards} from './objects.js'
 const emojis = cards.emojis
 let openCards = cards.openCards;
 const container = cards.container
+const audio = new Audio('../assets/audios/_card.mp3')
 
 const btn = cards.btn
 btn.onclick = resetGame
@@ -30,6 +31,7 @@ function validateClick() {
     if (openCards.length < 2) {
         this.classList.add('boxOpen')
         openCards.push(this)
+        audio.play()
     }
     if (openCards.length === 2) {
         setTimeout(() => {

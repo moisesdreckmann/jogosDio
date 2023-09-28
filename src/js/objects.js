@@ -14,7 +14,7 @@ const state = {
 }
 
 const cards = {
-    emojis: ['🍕','🍕','🍔','🍔','🍗','🍗','🍫','🍫','🍟','🍟','👀','👀'],
+    emojis: ['🍕','🍕','🍔','🍔','🍗','🍗','🍫','🍫','🍟','🍟','👀','👀', '🥩','🥩','🎂','🎂','🍰','🍰','🥤','🥤','☕','☕', '🌭','🌭'],
     openCards: [],
     container: document.querySelector('.sectionMemoria'),
     btn: document.querySelector('.btnMemoria')
