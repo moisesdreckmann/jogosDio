@@ -1,7 +1,10 @@
 :root {
   --cor1: rgb(33, 33, 32);
   --cor2: rgb(38, 38, 39);
-  --cor3: #B22936;
+  --cor3: rgb(178, 41, 54);
+  --cor4: rgb(168, 121, 34);
+  --cor5: rgba(168, 121, 34, 0.153);
+  --cor6: rgb(58, 58, 58);
 }
 
 * {
@@ -31,9 +34,11 @@ body {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 30px;
+  align-items: center;
+  border-radius: 4px 4px;
+  gap: 30px;
 }
 
 .sectionMain {
@@ -54,7 +59,7 @@ main {
   width: 300px;
   height: 50px;
   position: relative;
-  box-shadow: 4px 4px 6px #a8792227;
+  box-shadow: 4px 4px 6px var(--cor5);
 }
 
 .sectionMain div a {
@@ -64,4 +69,68 @@ main {
   position: absolute;
   text-align: center;
   padding-top: 15px;
+}
+
+/*pegando o circulo*/
+
+.sectionDetona {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.155);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.196);
+  border-radius: 4px 4px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sectionDetona2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--cor3);
+  border-radius: 4px 4px;
+  width: 500px;
+  height: 50px;
+}
+
+.sectionDetona div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.144);
+  cursor: pointer;
+}
+
+.sectionDetona div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.squareDetona {
+  width: 100px;
+  height: 100px;
+  background-color: var(--cor6);
+}
+
+.enemy {
+  width: 70px;
+  height: 70px;
+  background-color: var(--cor3);
+  border-radius: 50%;
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.enemy::before {
+  content: 'IFOOD';
+  font-size: 11px;
 }
