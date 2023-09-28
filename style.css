@@ -1,7 +1,7 @@
 :root {
   --cor1: rgb(33, 33, 32);
   --cor2: rgb(38, 38, 39);
-  --cor3: rgb(178, 41, 54);
+  --cor3: #b22936;
   --cor4: #a87922;
   --cor5: rgba(168, 121, 34, 0.153);
   --cor6: rgb(58, 58, 58);
@@ -144,7 +144,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  background: linear-gradient(144deg, rgba(175,34,31,1) 2%, rgba(237,200,12,1) 31%, rgba(175,34,31,1) 79%, rgba(237,200,12,1) 100%);
+  background: linear-gradient(144deg, rgba(255,95,95,1) 2%, rgba(121,12,237,1) 31%, rgba(255,95,95,1) 62%, rgba(121,12,237,1) 89%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.196);
   padding: 20px;
   transform-style: preserve-3d;
