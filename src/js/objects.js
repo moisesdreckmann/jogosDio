@@ -13,4 +13,11 @@ const state = {
     }
 }
 
-export default state
+const cards = {
+    emojis: ['🍕','🍕','🍔','🍔','🍗','🍗','🍫','🍫','🍟','🍟','👀','👀'],
+    openCards: [],
+    container: document.querySelector('.sectionMemoria'),
+    btn: document.querySelector('.btnMemoria')
+}
+
+export { state, cards };

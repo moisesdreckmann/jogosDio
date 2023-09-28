@@ -1,4 +1,4 @@
-import state from './objects.js';
+import {state} from './objects.js';
 
 const spans = state.views.spans
 const squares = state.views.squares
