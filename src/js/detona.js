@@ -1,22 +1,14 @@
-const state = {
-    views: {
-        squares: document.querySelectorAll('.squareDetona'),
-        spans: document.querySelectorAll('.squareDetona span'),
-        spanEnemy: document.querySelector('.squareDetona span.enemy')
-    },
-    controladores: {
-        hit: document.querySelector('.span1Detona'),
-        miss: document.querySelector('.span2Detona')
-    },
-    values: {
-        hitPosition: 0
-    }
-}
+import state from './objects.js';
+
+const spans = state.views.spans
+const squares = state.views.squares
+let hitPosition = state.values.hitPosition
 const intervalo = 800
 
 function createCircle(elements) {
     let aleatorio = Math.floor(Math.random() * 9)
-    state.values.hitPosition = aleatorio
+    hitPosition = aleatorio
+
     elements.forEach(element => {
         element.classList.remove('enemy')
     });
@@ -24,14 +16,14 @@ function createCircle(elements) {
 }
 
 function moveAndValidateCircle() {
-    setInterval(() => { createCircle(state.views.spans)}, intervalo)
+    setInterval(() => { createCircle(spans)}, intervalo)
     let contador1 = 0
     let contador2 = 0
 
-    state.views.squares.forEach(square => {
+    squares.forEach(square => {
         square.addEventListener('mousedown', () => {
             const clickedIndex = parseInt(square.getAttribute('data-index'))
-            if (state.values.hitPosition === clickedIndex) {
+            if (hitPosition === clickedIndex) {
                 contador1++
                 state.controladores.hit.innerHTML = contador1
             } else {
