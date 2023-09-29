@@ -144,7 +144,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  background: linear-gradient(144deg, rgba(255,95,95,1) 2%, rgba(121,12,237,1) 31%, rgba(255,95,95,1) 62%, rgba(121,12,237,1) 89%);
+  background: linear-gradient(144deg, rgba(255,197,95,1) 15%, rgba(244,120,38,1) 53%, rgba(255,197,95,1) 79%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.196);
   padding: 20px;
   transform-style: preserve-3d;
