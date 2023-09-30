@@ -23,8 +23,8 @@ function createGame() {
         box.className = 'cardMemoria'
         box.innerHTML = shuffleEmojis[i]
         box.onclick = validateClick
-        container.appendChild(box)
-    }
+        container.appendChild(box);
+    } 
 }
 
 function validateClick() {

@@ -6,4 +6,8 @@
 * utilização do Vite para organização do projeto
 * etc..
 
+OBS.: Jogo memoria não funcional em Firefox,
+devido a propriedade backface, necessitaria alterar 
+toda estrutura do jogo coisa para isso.
+
 link: https://moisesdreckmann.github.io/jogosDio/
