@@ -8,6 +8,10 @@ const middle2 = cards2.values.middlePc
 const win = cards2.values.win
 const loose = cards2.values.loose
 
+const audio = new Audio();
+audio.src = '../assets/audios/card.mp3'
+audio.type = 'audio/mpeg'
+
 let computadorCards
 let i = 0
 let contadorJogador = 0
@@ -35,7 +39,13 @@ function createGame() {
     analisarVitoria()
 
     player.forEach((card, index) => {
+        let cardClicked = false
         card.addEventListener('click', () => {
+            if (cardClicked) {
+                return
+            }
+            cardClicked = true
+            audio.play();
             if (middle.innerHTML.trim() === '') {
                 middle.classList.add('slotPlayerBack')
                 middle.innerHTML = card.innerHTML
