@@ -3,7 +3,7 @@ import {cards} from './objects.js'
 const emojis = cards.emojis
 let openCards = cards.openCards;
 const container = cards.container
-const audio = new Audio('https://moisesdreckmann.github.io/jogosDio/src/assets/audios/_card.mp3')
+const audio = new Audio('https://github.com/moisesdreckmann/jogosDio/blob/main/src/assets/audios/_card.mp3')
 
 const btn = cards.btn
 btn.onclick = resetGame
