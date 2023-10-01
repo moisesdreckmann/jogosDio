@@ -4,7 +4,7 @@ const emojis = cards.emojis
 let openCards = cards.openCards;
 const container = cards.container
 const audio = new Audio();
-audio.src = '../assets/audios/_card.mp3'
+audio.src = '../assets/audios/card.mp3'
 audio.type = 'audio/mpeg'
 
 const btn = cards.btn
