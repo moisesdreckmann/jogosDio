@@ -1,15 +1,17 @@
-import { cards2 } from "./objects"
+import { cards2 } from "./objects.js"
 
 const ppt = cards2.ppt
-const player = document.querySelectorAll('.slotPlayer')
-const pc = document.querySelectorAll('.slotPc')
-const middle = document.querySelector('.slotMiddle1')
-const middle2 = document.querySelector('.slotMiddle2')
-const win = document.querySelector('.win')
-const loose = document.querySelector('.loose')
+const player = cards2.values.slotPlayer
+const pc = cards2.values.slotPc
+const middle = cards2.values.middlePlayer
+const middle2 = cards2.values.middlePc
+const win = cards2.values.win
+const loose = cards2.values.loose
 
 let computadorCards
 let i = 0
+let contadorJogador = 0
+let contadorPc = 0
 
 function embaralhar() {
     return ppt.slice().sort(() => Math.random() - 0.5)
@@ -30,32 +32,7 @@ function createGame() {
         }
     }
 
-    let contadorJogador = 0
-    let contadorPc = 0
-
-    function analisarVitoria() {
-        if (middle.innerHTML == '✌' && middle2.innerHTML == '✋') {
-            contadorJogador++
-            win.innerHTML = `VITORIA: ${contadorJogador}`
-        } else if (middle.innerHTML == '👊' && middle2.innerHTML == '✌') {
-            contadorJogador++
-            win.innerHTML = `VITORIA: ${contadorJogador}`
-        } else if (middle.innerHTML == '✋' && middle2.innerHTML == '👊') {
-            contadorJogador++
-            win.innerHTML = `VITORIA: ${contadorJogador}`
-        } else if (middle.innerHTML == middle2.innerHTML) {
-            // Empate
-        } else {
-            contadorPc++
-            loose.innerHTML = `DERROTA: ${contadorPc}`
-        }
-        middle.classList.remove('slotPlayerBack')
-        middle.innerHTML = ''
-        middle.classList.add('backCardPadrao')
-        middle2.classList.remove('slotPcCardBack')
-        middle2.innerHTML = '';
-        middle2.classList.add('backCardPadrao')
-    }
+    analisarVitoria()
 
     player.forEach((card, index) => {
         card.addEventListener('click', () => {
@@ -95,5 +72,28 @@ function createGame() {
     })
 }
 
+function analisarVitoria() {
+    if (middle.innerHTML == '✌' && middle2.innerHTML == '✋') {
+        contadorJogador++
+        win.innerHTML = `VITORIA: ${contadorJogador}`
+    } else if (middle.innerHTML == '👊' && middle2.innerHTML == '✌') {
+        contadorJogador++
+        win.innerHTML = `VITORIA: ${contadorJogador}`
+    } else if (middle.innerHTML == '✋' && middle2.innerHTML == '👊') {
+        contadorJogador++
+        win.innerHTML = `VITORIA: ${contadorJogador}`
+    } else if (middle.innerHTML == middle2.innerHTML) {
+        // Empate
+    } else {
+        contadorPc++
+        loose.innerHTML = `DERROTA: ${contadorPc}`
+    }
+    middle.classList.remove('slotPlayerBack')
+    middle.innerHTML = ''
+    middle.classList.add('backCardPadrao')
+    middle2.classList.remove('slotPcCardBack')
+    middle2.innerHTML = '';
+    middle2.classList.add('backCardPadrao')
+}
 
 createGame()

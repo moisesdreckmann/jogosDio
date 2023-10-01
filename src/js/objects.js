@@ -24,7 +24,15 @@ const cards2 = {
     ppt: [
         'T', 'T', 'T', 'T', 'PE', 'PE', 'PE', 'PE', 'PA', 'PA', 'PA', 'PA',
         'T','PA','PE'
-    ]
+    ],
+    values: {
+        slotPlayer: document.querySelectorAll('.slotPlayer'),
+        slotPc: document.querySelectorAll('.slotPc'),
+        middlePlayer: document.querySelector('.slotMiddle1'),
+        middlePc: document.querySelector('.slotMiddle2'),
+        win: document.querySelector('.win'),
+        loose: document.querySelector('.loose')
+    }
 }
 
 
