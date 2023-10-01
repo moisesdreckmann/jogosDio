@@ -20,4 +20,12 @@ const cards = {
     btn: document.querySelector('.btnMemoria')
 }
 
-export { state, cards };
+const cards2 = {
+    ppt: [
+        'T', 'T', 'T', 'T', 'PE', 'PE', 'PE', 'PE', 'PA', 'PA', 'PA', 'PA',
+        'T','PA','PE'
+    ]
+}
+
+
+export { state, cards, cards2 };

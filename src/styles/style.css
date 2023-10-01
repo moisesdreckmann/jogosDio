@@ -232,6 +232,12 @@ main {
   gap: 50px;
 }
 
+.containerKeys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section h2 {
   font-size: 1.6rem;
 }
@@ -337,4 +343,74 @@ section .column span {
 }
 
 /*pedra papel e tesoura*/
+
+.sectionPpt {
+  width: 700px;
+  height: 400px;
+  background-image: url(../assets/imgs/backJogo.jpg);
+  background-size: 100% 100%;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.199),
+  inset 27px 19px 70px 0px rgba(0, 0, 0, 0.33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sectionPpt > div {
+  width: 600px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sectionPpt > div div {
+  width: 80px;
+  height: 100px;
+  border-radius: 2px 2px;
+  border: 3px solid black;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.199),
+  inset 1px 2px 7px 0px rgba(1, 1, 1, 0.33);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.slotMiddle1, .slotMiddle2 {
+  pointer-events: none;
+  cursor: auto;
+}
+
+.slotPlayerBack {
+  background-color: white;
+}
+
+.backCardPadrao {
+  background-color: #4b4b4ba4;
+}
+
+.slotPcCardBack {
+  background-image: url(../assets/imgs/backCardEnemy.png);
+  background-size: 100% 100%;
+}
+
+.sectionBtn {
+  width: 700px;
+  height: 50px;
+  background-color: var(--cor3);
+  margin-top: 10px;
+  border-radius: 4px 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 
