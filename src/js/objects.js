@@ -21,10 +21,8 @@ const cards = {
 }
 
 const cards2 = {
-    ppt: [
-        'T', 'T', 'T', 'T', 'PE', 'PE', 'PE', 'PE', 'PA', 'PA', 'PA', 'PA',
-        'T','PA','PE'
-    ],
+    ppt: ['T', 'T', 'T', 'PE', 'PE', 'PE', 'PA', 'PA', 'PA'],
+    ppt2: ['T', 'T', 'T', 'PE', 'PE', 'PE', 'PA', 'PA', 'PA'],
     values: {
         slotPlayer: document.querySelectorAll('.slotPlayer'),
         slotPc: document.querySelectorAll('.slotPc'),

@@ -1,6 +1,7 @@
 import { cards2 } from "../objects.js"
 
 const ppt = cards2.ppt
+const ppt2 = cards2.ppt2
 const player = cards2.values.slotPlayer
 const pc = cards2.values.slotPc
 const middle = cards2.values.middlePlayer
@@ -18,13 +19,18 @@ let contadorJogador = 0
 let contadorPc = 0
 
 function embaralhar() {
-    return ppt.slice().sort(() => Math.random() - 0.5)
+    let handPlayer = ppt.slice().sort(() => Math.random() - 0.5)
+    let handPc = ppt2.slice().sort(() => Math.random() - 0.5)
+    const array = handPlayer.concat(handPc)
+    return array
 }
 
 function createGame() {
     const array = embaralhar()
+    console.log(array)
     const jogadorCards = array.slice(0, 6)
-    computadorCards = array.slice(0, 6)
+    computadorCards = array.slice(9, 15)
+    console.log(computadorCards)
 
     for (let i = 0; i < jogadorCards.length; i++) {
         if (jogadorCards[i] === 'T') {
@@ -36,7 +42,7 @@ function createGame() {
         }
     }
 
-    analisarVitoria();
+    analisarVitoria()
 
     player.forEach((card, index) => {
         let cardClicked = false
