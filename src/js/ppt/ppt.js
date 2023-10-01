@@ -27,10 +27,8 @@ function embaralhar() {
 
 function createGame() {
     const array = embaralhar()
-    console.log(array)
     const jogadorCards = array.slice(0, 6)
     computadorCards = array.slice(9, 15)
-    console.log(computadorCards)
 
     for (let i = 0; i < jogadorCards.length; i++) {
         if (jogadorCards[i] === 'T') {
